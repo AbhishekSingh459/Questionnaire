@@ -1,0 +1,385 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://www.stockvault.net/data/2020/09/24/279149/preview16.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: fixed;
+    padding-top: 0;
+    background-color: rgba(19, 1, 19, 0.738);
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    margin-left: 9px;
+    padding: 0;
+
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-toggler {
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    margin-right: 100px;
+    padding-top: 10px;
+}
+
+.nav-item {
+    margin-left: 6%;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+.nav-item button {
+    width: 90px;
+    margin-top: 3px;
+    margin-right: 30px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+/* Bootstrap 5 text input with search icon */
+#searchbar {
+    margin-left: 14%;
+}
+
+.form-control {
+    border-radius: 25px;
+}
+
+.form-group {
+    width: 50%;
+    padding-top: 10px;
+}
+
+.has-search .form-control {
+    padding-left: 2.3rem;
+}
+
+.has-search .fa-solid {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #6b6969;
+}
+
+::placeholder {
+    color: #090909;
+}
+
+.subbar {
+    display: flex;
+    margin: 62px 0 0;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.main {
+    display: flex;
+    margin-top: 85px;
+    height: 100vh;
+}
+
+.box1 {
+    width: 16%;
+    margin-left: 12px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: rgb(149, 146, 146, 0.2);
+    position: fixed;
+}
+
+.box1 h2 {
+    font-family: Montserrat;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-left: 12%;
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.box1 ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 0;
+    padding-bottom: 4%;
+}
+
+.box1 ul li {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10%;
+}
+
+.box1 ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.box1 ul li:hover {
+    background-color: rgba(135, 133, 133, 0.35);
+}
+
+.box1 i {
+    margin-right: 25px;
+}
+
+.box2 {
+    width: 54vw;
+    height: 100vh;
+    margin-left: 18%;
+    margin-right: 1%;
+}
+
+.subbox {
+    background-color: rgb(149, 146, 146, 0.2);
+    height: 75px;
+    border-bottom: 1px solid gray;
+}
+
+.subbox h2 {
+    font-family: Montserrat;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.column a {
+    text-decoration: none;
+}
+
+.column {
+    margin: 30px 10px 0;
+    padding: 0;
+}
+
+
+.card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -9px;
+    margin: auto;
+    width: 205px;
+    height: 267px;
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+
+.cardimage {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: auto;
+    box-shadow: 0px 0px 40px 0px #000000;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    background: linear-gradient(to right, #e380f7 0%, #aadff0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.column:hover{
+    transform: scale(1.09);
+    transition-duration: 0.7s;
+}
+
+/* .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .card p:not(.heading) {
+    font-size: 14px;
+  }
+  
+  .card p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+  } */
+
+.card:hover::after {
+    filter: blur(30px);
+}
+
+.card:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+
+
+.box3 {
+    width: 25%;
+    margin-left: 73.5%;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: rgba(203, 200, 200, 0.151);
+    position: fixed;
+}
+
+.box3 h2 {
+    font-family: Montserrat;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-left: 3%;
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.box3 ul {
+    list-style-type: none;
+    font-size: 18px;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+.box3 ul li {
+    padding: 10px 0;
+}
+
+.box3 ul li a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:767px) {
+    .subbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .form-group {
+        margin-left: 2%;
+        width: 30%;
+    }
+
+    #searchbar {
+        margin-left: 0;
+    }
+
+    .item {
+        padding-left: 11px;
+    }
+
+    .nav-item button {
+        margin-left: 0;
+    }
+
+    .main {
+        margin-top: 10px;
+    }
+
+    .box3 {
+        display: none;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .form-group {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:1162px) {
+    .list {
+        display: none;
+        padding: 18px auto 18px auto;
+    }
+
+    .box1 {
+        margin-left: 3%;
+    }
+
+    .box1 h2 {
+        padding-left: 9px;
+    }
+
+    .head {
+        display: none;
+    }
+
+    .box1 {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .like i {
+        width: 26px;
+    }
+
+}
