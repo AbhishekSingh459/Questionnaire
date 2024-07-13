@@ -308,9 +308,19 @@ body {
         margin-left: 2%;
         width: 30%;
     }
-
     #searchbar {
         margin-left: 0;
+    }
+    .web_name{
+        display: none;
+    }
+    .searchbox{
+        width: 200px;
+        position: relative;
+        right: 50px;
+    }
+    .search_icon{
+        display: none !important;
     }
 
     .item {
